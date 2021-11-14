@@ -15,7 +15,8 @@ module.exports = (sequelize, DataTypes) => {
   };
   login.init({
     username: DataTypes.STRING,
-    password: DataTypes.STRING
+    password: DataTypes.STRING,
+    is_logged_in: DataTypes.BOOLEAN
   }, {
     sequelize,
     modelName: 'login',

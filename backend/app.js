@@ -4,8 +4,11 @@ const cors = require('cors');
 const dotenv = require('dotenv').config('./.env');
 const app = express();
 
+const login = require('./routes/login_route');
+
 app.use(cors());
 app.use(express.json());
+app.use('/login', login)
 
 async function main(){
     // await sequelize.sync({alter: true}); 
