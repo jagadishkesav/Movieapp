@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   actor.init({
-    actor__name: DataTypes.STRING,
+    actor_name: DataTypes.STRING,
     actor_gender: DataTypes.STRING
   }, {
     sequelize,

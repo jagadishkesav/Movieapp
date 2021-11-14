@@ -18,9 +18,9 @@ module.exports = (sequelize, DataTypes) => {
     ratings: DataTypes.NUMERIC,
     image: DataTypes.STRING,
     video: DataTypes.BOOLEAN,
-    language_id: DataTypes.NUMBER,
-    director_id: DataTypes.NUMBER,
-    actor_id: DataTypes.NUMBER,
+    language_id: DataTypes.INTEGER,
+    director_id: DataTypes.INTEGER,
+    actor_id: DataTypes.INTEGER,
     release_date: DataTypes.DATE,
     overview: DataTypes.STRING
   }, {
